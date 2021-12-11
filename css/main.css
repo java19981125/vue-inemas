@@ -530,7 +530,30 @@
   grid-column-end: span 2;
   grid-row-end: span 2;
 }
-
+.footer{
+  width: 100%;
+  min-height: 80px;
+  background: linear-gradient(90deg, #FF8C30 0%, #9F4700 100%);
+  align-items: center;
+}
+.footer-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.left{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.left a img{
+  width: 158px;
+  padding: 24px 50px 24px 0;
+}
+.right{
+  width: 21%;
+}
 
 @media (max-width: 992px) {
   .films-card,
@@ -571,6 +594,9 @@
     font-size: 40px;
     line-height: 44px;
   }
+  .right{
+    width: 25%;
+  }
 }
 @media (max-width: 768px) {
   .header__content h1{
@@ -598,6 +624,9 @@
   }
   .premier__content p{
     margin: 10px 0;
+  }
+  .right{
+    width: 30%;
   }
 }
 @media (max-width: 576px) {
@@ -653,6 +682,10 @@
   .serials-card:nth-of-type(12n + 10) .serials-card__content h3{
     font-size: 24px;
     line-height: 27px;
+  }
+  .right{
+    width: 100%;
+    padding-bottom: 24px;
   }
 }
 @media (max-width: 480px) {
